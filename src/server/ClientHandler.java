@@ -93,10 +93,9 @@ public class ClientHandler {
                         }
                     }
 
-                    //
+
                 } catch (IOException socketTimeoutException) {
                     socketTimeoutException.printStackTrace();
-
                 } finally {
                     System.out.println("Клиент отключился");
                     server.unsubscribe(this);
